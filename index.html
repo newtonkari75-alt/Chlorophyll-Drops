@@ -96,7 +96,7 @@
 
     <!-- 1. Top Announcement Bar -->
     <div class="bg-black text-white text-[10px] sm:text-xs font-bold py-2 text-center uppercase tracking-wide z-20 relative">
-        Special Offer Worldwide | Up to 60% OFF
+        Special Offer Worldwide | Up to 75% OFF
     </div>
 
     <!-- 2. Trust Sub-header (Marquee) -->
@@ -157,94 +157,107 @@
         </a>
     </nav>
 
-    <!-- Hero Section with Automatic Carousel -->
-    <div id="hero-carousel" class="relative w-full aspect-square sm:aspect-video bg-gray-100 overflow-hidden group">
-        <!-- Images -->
-        <img src="images/chlorophyll.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-100 z-10" data-index="0" alt="WellaNaturals Product 1">
-        <img src="images/chlorophyll2.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="1" alt="WellaNaturals Product 2">
-        <img src="images/chlorophyll3.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="2" alt="WellaNaturals Product 3">
-        <img src="images/chlorophyll4.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="3" alt="WellaNaturals Product 4">
-        <img src="images/chlorophyll5.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="4" alt="WellaNaturals Product 5">
-        <img src="images/chlorophyll6.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="5" alt="WellaNaturals Product 6">
-        <img src="images/chlorophyll7.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="6" alt="WellaNaturals Product 7">
-        <img src="images/chlorophyll8.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="7" alt="WellaNaturals Product 8">
+    <!-- DESKTOP CONTAINER: Wrap everything in a width constrained container for desktop -->
+    <div class="max-w-7xl mx-auto md:px-8 md:py-8">
+
+        <!-- SESSION 1: Photos (Left) + Text (Right) on Desktop. Stacked on Mobile. -->
+        <div class="flex flex-col md:flex-row md:gap-12 md:items-start">
+            
+            <!-- Left Column: Carousel -->
+            <div class="w-full md:w-1/2 lg:w-3/5">
+                <div id="hero-carousel" class="relative w-full aspect-square md:aspect-[4/3] bg-gray-100 overflow-hidden group md:rounded-2xl md:shadow-sm">
+                    <!-- Images -->
+                    <img src="images/chlorophyll.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-100 z-10" data-index="0" alt="WellaNaturals Product 1">
+                    <img src="images/chlorophyll2.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="1" alt="WellaNaturals Product 2">
+                    <img src="images/chlorophyll3.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="2" alt="WellaNaturals Product 3">
+                    <img src="images/chlorophyll4.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="3" alt="WellaNaturals Product 4">
+                    <img src="images/chlorophyll5.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="4" alt="WellaNaturals Product 5">
+                    <img src="images/chlorophyll6.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="5" alt="WellaNaturals Product 6">
+                    <img src="images/chlorophyll7.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="6" alt="WellaNaturals Product 7">
+                    <img src="images/chlorophyll8.jpg" class="carousel-image absolute inset-0 w-full h-full object-cover opacity-0 z-0" data-index="7" alt="WellaNaturals Product 8">
+                    
+                    <!-- Loading Placeholder -->
+                    <div class="absolute inset-0 bg-gray-200 animate-pulse -z-10"></div>
+                </div>
+            </div>
+
+            <!-- Right Column: Product Details (Text) -->
+            <div class="w-full md:w-1/2 lg:w-2/5 px-4 md:px-0 py-6 md:py-0">
+                <!-- Ratings -->
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="flex text-yellow-400 text-lg">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="font-bold text-gray-900">4.8</span>
+                    <span class="text-gray-500 text-sm">| 1,500+ Verified Reviews</span>
+                </div>
+
+                <h1 class="text-2xl sm:text-3xl font-black text-gray-900 leading-tight mb-4">
+                    The Natural “Green Water” Detox People Around the World Are Loving
+                </h1>
+
+                <p class="text-gray-700 font-bold text-lg mb-4">
+                    Boost energy, reduce bloating, and support glowing skin — with just 15 drops a day of nature’s most powerful superfood.
+                </p>
+
+                <!-- Main Benefits List -->
+                <div class="mb-6">
+                    <h2 class="font-bold text-gray-900 text-lg mb-3 flex items-center gap-2">
+                        <i class="fas fa-check-circle text-green-600"></i> Why So Many People Choose This Daily Detox
+                    </h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Natural internal deodorant & gentle daily detox</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Supports clear, glowing skin & hormonal balance</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Boosts energy without caffeine or crashes</span></li>
+                        <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Easy-to-take liquid drops with a refreshing mint taste</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SESSION 2: Options (Side by Side on Desktop, Stacked on Mobile) -->
+        <div class="px-4 md:px-0 mt-2 md:mt-12 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- OPTION 1 (Buy/Offer) -->
+                <div class="border-2 border-green-500 rounded-xl overflow-hidden shadow-lg relative bg-green-50/50 flex flex-col h-full">
+                    <div class="bg-green-600 text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">🔥 LIMITED-TIME OFFER</div>
+                    <div class="p-5 pt-8 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">Get Up To 75% OFF Today</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed font-medium">Take advantage of this exclusive deal while supplies last.</p>
+                        <ul class="space-y-2 mb-5 text-sm flex-grow">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">Discount applied automatically</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">Secure global checkout</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">30-day money-back guarantee</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">No hidden fees</span></li>
+                        </ul>
+                        <!-- Option 1 Link: uid=10090 -->
+                        <a href="https://www.clickrtrckr.com/2LXFFTP/718SG52/?uid=10090" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-3 text-lg leading-tight border-b-4 border-green-800 no-underline mt-auto"><i class="fas fa-check-circle text-2xl"></i><span class="text-left">YES, I WANT UP TO<br>75% OFF</span></a>
+                    </div>
+                </div>
+
+                <!-- OPTION 2 (Learn More) -->
+                <div class="border border-blue-200 rounded-xl overflow-hidden shadow-sm relative bg-white flex flex-col h-full">
+                     <div class="bg-blue-600 text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 2</div>
+                    <div class="p-5 pt-8 flex flex-col flex-grow">
+                        <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">Learn More Before Ordering</h3>
+                        <p class="text-blue-700 font-bold text-sm mb-3 uppercase tracking-wide">Want to explore all the benefits before deciding?</p>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Discover why thousands trust this formula for daily wellness.</p>
+                        <ul class="space-y-2 mb-5 text-sm flex-grow">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">How chlorophyll supports natural detox</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Real before & after results</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Why it’s better than caffeine for energy</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Full ingredient list (Non-GMO & Vegan)</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Verified customer reviews</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Safety & usage guidelines</span></li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">30-day risk-free guarantee</span></li>
+                        </ul>
+                        <!-- Option 2 Link: uid=10089 -->
+                        <a href="https://www.clickrtrckr.com/2LXFFTP/718SG52/?uid=10089" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-2 text-base border-b-4 border-blue-800 no-underline mt-auto"><i class="far fa-eye text-xl"></i><span>SHOW ME THE COMPLETE<br>PRODUCT PAGE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <!-- Loading Placeholder (Hidden immediately by JS, fallback) -->
-        <div class="absolute inset-0 bg-gray-200 animate-pulse -z-10"></div>
-    </div>
-
-    <!-- Product Details Section -->
-    <div class="px-4 py-6 max-w-2xl mx-auto pb-32">
-        <!-- Ratings -->
-        <div class="flex items-center gap-2 mb-3">
-            <div class="flex text-yellow-400 text-lg">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-            </div>
-            <span class="font-bold text-gray-900">4.8</span>
-            <span class="text-gray-500 text-sm">| 1,500+ Verified Reviews</span>
-        </div>
-
-        <h1 class="text-2xl sm:text-3xl font-black text-gray-900 leading-tight mb-4">
-            The Natural “Green Water” Detox People Around the World Are Loving
-        </h1>
-
-        <p class="text-gray-700 font-bold text-lg mb-4">
-            Boost energy, reduce bloating, and support glowing skin — with just 15 drops a day of nature’s most powerful superfood.
-        </p>
-
-        <!-- Main Benefits List -->
-        <div class="mb-6">
-            <h2 class="font-bold text-gray-900 text-lg mb-3 flex items-center gap-2">
-                <i class="fas fa-check-circle text-green-600"></i> Why So Many People Choose This Daily Detox
-            </h2>
-            <ul class="space-y-3">
-                <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Natural internal deodorant & gentle daily detox</span></li>
-                <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Supports clear, glowing skin & hormonal balance</span></li>
-                <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Boosts energy without caffeine or crashes</span></li>
-                <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-700">Easy-to-take liquid drops with a refreshing mint taste</span></li>
-            </ul>
-        </div>
-
-        <!-- Options Section -->
-        <div class="space-y-6 pb-8">
-            <!-- OPTION 1 (Buy/Offer) -->
-            <div class="border-2 border-green-500 rounded-xl overflow-hidden shadow-lg relative bg-green-50/50">
-                <div class="bg-green-600 text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">🔥 LIMITED-TIME OFFER</div>
-                <div class="p-5 pt-8">
-                    <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">Get Up To 60% OFF Today</h3>
-                    <p class="text-gray-600 text-sm mb-4 leading-relaxed font-medium">Take advantage of this exclusive deal while supplies last.</p>
-                    <ul class="space-y-2 mb-5 text-sm">
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">Discount applied automatically</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">Secure global checkout</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">30-day money-back guarantee</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-green-600 mt-1"></i><span class="text-gray-800 font-medium">No hidden fees</span></li>
-                    </ul>
-                    <!-- Option 1 Link: uid=10090 -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/718SG52/?uid=10090" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-3 text-lg leading-tight border-b-4 border-green-800 no-underline"><i class="fas fa-check-circle text-2xl"></i><span class="text-left">YES, I WANT UP TO<br>60% OFF</span></a>
-                </div>
-            </div>
-
-            <!-- OPTION 2 (Learn More) -->
-            <div class="border border-blue-200 rounded-xl overflow-hidden shadow-sm relative bg-white">
-                 <div class="bg-blue-600 text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 2</div>
-                <div class="p-5 pt-8">
-                    <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">Learn More Before Ordering</h3>
-                    <p class="text-blue-700 font-bold text-sm mb-3 uppercase tracking-wide">Want to explore all the benefits before deciding?</p>
-                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Discover why thousands trust this formula for daily wellness.</p>
-                    <ul class="space-y-2 mb-5 text-sm">
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">How chlorophyll supports natural detox</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Real before & after results</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Why it’s better than caffeine for energy</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Full ingredient list (Non-GMO & Vegan)</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Verified customer reviews</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">Safety & usage guidelines</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check text-blue-500 mt-1"></i><span class="text-gray-600">30-day risk-free guarantee</span></li>
-                    </ul>
-                    <!-- Option 2 Link: uid=10089 -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/718SG52/?uid=10089" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-2 text-base border-b-4 border-blue-800 no-underline"><i class="far fa-eye text-xl"></i><span>SHOW ME THE COMPLETE<br>PRODUCT PAGE</span></a>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Footer Section with Policy Links -->
